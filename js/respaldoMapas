@@ -1,0 +1,195 @@
+function GoogleMap(latitud,longitud){
+    
+    this.initialize = function(){
+        var map = showMap(latitud,longitud);
+        addMarkersToMap(map);
+    }    
+    
+    var addMarkersToMap = function(map){
+        var mapBounds = new google.maps.LatLngBounds();
+    
+        var latitudeAndLongitudeOne = new google.maps.LatLng('-0.218478','-78.5111');
+
+        var markerOne = new google.maps.Marker({
+				position: latitudeAndLongitudeOne,
+                draggable: true,
+                raiseOnDrag: true,
+                labelContent: "$425K",
+                labelAnchor: new google.maps.Point(22, 0),
+                labelClass: "labels", // the CSS class for the label
+                icon: {},
+                map: map
+		});
+
+
+
+
+
+        var latitudeAndLongitudeTwo = new google.maps.LatLng('-2.170521498', '-79.91062164');
+
+        var latitudeAndLongitudeFour = new google.maps.LatLng('-2.142798246', '-79.86275702');
+        var latitudeAndLongitudeFive = new google.maps.LatLng('-2.142798246', '-79.86275702');
+        var latitudeAndLongitudeSix = new google.maps.LatLng('-2.142798246', '-79.86275702');
+        var latitudeAndLongitudeSeven = new google.maps.LatLng('-2.167833328', '-79.91062164');
+        var latitudeAndLongitudeEight = new google.maps.LatLng('-2.1444', '-79.8643');
+
+        var latitudeAndLongitudeNine = new google.maps.LatLng('-2.192370653', '-79.87960863');
+
+
+
+        var markerTwo = new google.maps.Marker({
+					position: latitudeAndLongitudeTwo,
+					title: "hola mundo",
+					map: map
+				});
+
+
+
+         var latitudeAndLongitudeThree = new google.maps.LatLng(latitud,longitud);
+         var markerThree = new google.maps.Marker({
+					position: latitudeAndLongitudeThree,
+					title: "hola mundo",
+                    draggable: true,
+                    raiseOnDrag: true,
+                    labelContent: "$425K",
+                    labelAnchor: new google.maps.Point(22, 0),
+                    labelClass: "labels", // the CSS class for the label
+					map: map
+				});
+
+         var markerFour = new google.maps.Marker({
+                    position: latitudeAndLongitudeFour,
+                    map: map
+                });
+
+         var markerFive = new google.maps.Marker({
+                    position: latitudeAndLongitudeFive,
+                    title: "hola mundo",
+                    map: map
+                });
+
+         var markerSix = new google.maps.Marker({
+                    position: latitudeAndLongitudeSix,
+                    title: "hola mundo",
+                    map: map
+                });
+
+         var markerSeven = new google.maps.Marker({
+                    position: latitudeAndLongitudeSeven,
+                    title: "hola mundo",
+                    map: map
+                });
+
+
+         var markerEight = new google.maps.Marker({
+                    position: latitudeAndLongitudeEight,
+                    title: "hola mundo",
+                    map: map
+                });
+
+          var markerNine = new google.maps.Marker({
+                    position: latitudeAndLongitudeNine,
+                    title: "hola mundo",
+                    map: map
+                });
+
+
+				
+
+
+
+
+        mapBounds.extend(latitudeAndLongitudeOne);
+        mapBounds.extend(latitudeAndLongitudeTwo);
+        mapBounds.extend(latitudeAndLongitudeThree);
+        mapBounds.extend(latitudeAndLongitudeFour);
+        mapBounds.extend(latitudeAndLongitudeFive);
+        mapBounds.extend(latitudeAndLongitudeSix);
+        mapBounds.extend(latitudeAndLongitudeSeven);
+        mapBounds.extend(latitudeAndLongitudeEight);
+        mapBounds.extend(latitudeAndLongitudeNine);
+        
+
+         var posicionActual = new google.maps.InfoWindow({
+           content: "<h3>Me encuentro aqu&iacute;</h3>"
+         });
+
+         var TRATTORIAPICCOLOMONDO = new google.maps.InfoWindow({
+           content: "<h3>TRATTORIA PICCOLO MONDO</h3><p><strong>Direcci&oacute;n: B&aacute;lsamos 504 e/. Las Monjas y &Eacute;banos</strong></p>"
+         });
+
+         var ALOWORLDFUSION = new google.maps.InfoWindow({
+           content: "<h3>ALO WORLD FUSION</h3><p><strong>Direcci&oacute;n: Km 1.5 V&iacute;a Samborond&oacute;n, CC. La Piazza, local 1C</strong></p><p><strong>Tel&eacute;fono: (04) 283 0694</strong></p>"
+         });
+
+         var TUPACPERUVIANNOVO = new google.maps.InfoWindow({
+           content: "<h3>TUPAC PERUVIAN NOVO</h3><p><strong>Direcci&oacute;n: Km 1.5 V&iacute;a Samborond&oacute;n, CC. La Piazza, local 1C</strong></p><p><strong>Tel&eacute;fono: (04) 283 0694</strong></p>"
+         });
+
+         var RAMONCARNESALCARBON = new google.maps.InfoWindow({
+           content: "<h3>RAMON CARNES AL CARBON</h3><p><strong>Direcci&oacute;n: Km 1.5 V&iacute;a Samborond&oacute;n, CC. La Piazza, local 1C</strong></p><p><strong>Tel&eacute;fono: (04) 283 0694</strong></p>"
+         }); 
+
+
+         var DALUIGIRISTORANTE = new google.maps.InfoWindow({
+           content: "<h3>Da LUIGI RISTORANTE</h3><p><strong>Direcci&oacute;n: B&aacute;lsamos 504 e/. Las Monjas y &Eacute;banos</strong></p>"
+         });
+
+
+         var ELFOGONCARNESYVINOS = new google.maps.InfoWindow({
+           content: "<h3>EL FOGON CARNES Y VINOS</h3><p><strong>Direcci&oacute;n: Km 1.5 V&iacute;a Samborond&oacute;n, CC. La Piazza, local 1C</strong></p>"
+         });
+
+
+          var ELFOGONCARNESYVINOS = new google.maps.InfoWindow({
+           content: "<h3>EL FOGON CARNES Y VINOS</h3><p><strong>Direcci&oacute;n: Km 1.5 V&iacute;a Samborond&oacute;n, CC. La Piazza, local 1C</strong></p>"
+         });
+
+
+        var COPAAIRLINES = new google.maps.InfoWindow({
+           content: "<h3>COPA AIRLINES</h3><p><strong>Direcci&oacute;n: Edificio La Previsora, Malec&oacute;n y 9 de Octubre.</strong></p>"
+         });
+
+
+
+
+
+
+
+         
+
+
+        google.maps.event.addListener(markerThree, "click", function (e) { posicionActual.open(map, this); });
+         
+        google.maps.event.addListener(markerTwo, "click", function (e) { TRATTORIAPICCOLOMONDO.open(map, this); });
+
+        google.maps.event.addListener(markerFour, "click", function (e) { ALOWORLDFUSION.open(map, this); });
+
+        google.maps.event.addListener(markerFive, "click", function (e) { TUPACPERUVIANNOVO.open(map, this); });
+
+        google.maps.event.addListener(markerSix, "click", function (e) { RAMONCARNESALCARBON.open(map, this); });
+
+        google.maps.event.addListener(markerSeven, "click", function (e) { DALUIGIRISTORANTE.open(map, this); });
+
+        google.maps.event.addListener(markerEight, "click", function (e) { ELFOGONCARNESYVINOS.open(map, this); });
+
+        google.maps.event.addListener(markerNine, "click", function (e) { COPAAIRLINES.open(map, this); });
+
+        //map.fitBounds(mapBounds);
+    }
+    
+    
+    
+    function showMap(latidud,longitud){
+    	//alert("Latitud: "+latitud+" Longitud: "+longitud);
+        var mapOptions = {
+			     zoom: 12,
+			     center: new google.maps.LatLng(latitud,longitud),
+			     mapTypeId: google.maps.MapTypeId.ROADMAP,
+			 }
+			 
+        var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+        
+        return map;
+    }
+}
