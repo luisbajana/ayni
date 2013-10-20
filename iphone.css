@@ -1,6 +1,16 @@
 *{ margin: 0px; padding: 0px; font-family: helvetica; }
 
-body{ background-color: #005197; }
+    
+    
+            @media print {
+              html, body {
+                height: auto;
+              }
+    
+              
+            }
+
+body{ height: 100%; margin: 0; padding: 0; background-color: #005197; }
 
 #contenedorLogin{ background-image: url("img/fondoContenido1.png"); height: 480px !important; width: 320px !important; background-size: 320px 480px !important; margin: 0 auto !important; position: relative !important; padding: 0 !important; }
 
