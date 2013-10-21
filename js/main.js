@@ -173,7 +173,6 @@
     $("#subirElemento").live("click",function(){
 
           $(".contenedorDescuentos").hide();
-          $("#perfilContenido").hide();
           $("#map_canvas").hide();
           $("#contenidoSubir").show();
 
@@ -219,7 +218,6 @@
 
           $("#contenidoquehacer").hide();
           $("#descuentosComida").hide();
-          $("#perfilContenido").hide();
           $("#map_canvas").hide();
 
           $("#contenedorListaDescuentos").show();
@@ -237,27 +235,7 @@
           /* ========================================== */
     });
 
-    
-    $("#perfilBoton").live("click",function(){
-        $("#contenidoquehacer").hide();
-        $("#descuentosComida").hide();
-        $("#map_canvas").hide();
-
-        $(".contenedorDescuentos").hide();
-        $("#perfilContenido").show();
-        
-
-        $("#descuentosDivBoton").attr("class","noactive menuItem");
-        $("#quehacerDivBoton").attr("class","noactive menuItem");
-        $("#perfilDivBoton").attr("class","active menuItem");
-        $("#cercaDivBoton").attr("class","noactive menuItem");
-
-
-        /* ============ Title ============ */
-            $("#navBar").hide();
-        /* ========================================== */
-
-    });
+  
 
 
 
@@ -268,7 +246,6 @@
         $("#descuentosComida").hide();
 
         $(".contenedorDescuentos").hide();
-        $("#perfilContenido").hide();
         
         navigator.geolocation.getCurrentPosition(onSuccess, onError);    
         
@@ -298,7 +275,6 @@
 
         localStorage.removeItem("username");
 
-        $("#perfilContenido").hide();
         $("#menuInferior").hide();
         
         $("#contenedorLogin").load('html/login.html' , function(){

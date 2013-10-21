@@ -25,9 +25,9 @@ body{ height: 100%; margin: 0; padding: 0; background-color: #005197; }
 /* MENU */
 #menuInferior{ background-image: url("img/bgmenuinferior.png"); background-repeat: repeat-x; position: absolute; bottom: 0px; height: 63px !important; font-size: 12px; width: 100% !important; }
 #menuInferior a{ text-decoration: none !important; }
-.menuItem{ width: 25%; height: 65px; display: block; text-align: center; padding: 5px 0 0 0; float: left; }
+.menuItem{ width: 105px; height: 70px; display: block; text-align: center; padding: 5px 0 0 0; float: left; }
 .noactive{ color: #999; }
-.active{ background-color: #128ACB; color: #FFF; height: 60px !important; }
+.active{ background-color: #128ACB; color: #FFF; height: 70px !important; }
 /* FIN DEL MENU */
 
 
@@ -42,7 +42,6 @@ body{ height: 100%; margin: 0; padding: 0; background-color: #005197; }
 .clearfix, .container {display:block;}
 .clear {clear:both;}
 
-.contenedorDescuentos{ }
 .descuentoCaja{ border: solid 1px #CCCCCC;  }
 .descuentoHeader{ background-color: #C4443F; text-transform: uppercase; color: #FFF; padding: 5px; }
 .descuentoBody{ background-color: #F5F4F4; } 
